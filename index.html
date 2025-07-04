@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce website</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index-responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="signUP.css">
+
+</head>
+
+<body>
+
+    <!-- Top promotional header with offer text and language dropdown -->
+    <header class="top-header">
+        <div class="container">
+            <div class="center-text">
+                <p class="center-text-p">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+                    <a href="#">ShopNow</a>
+                </p>
+            </div>
+            <div class="language">English <img src="SVG,s/arrow.svg" alt="">
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navigation Bar: Logo, Menu Links, Search, Icons & Mobile Menu -->
+    <nav class="navbar">
+        <div class="hamburger">
+            <img src="SVG,s/menu.svg" alt="menu-icon">
+        </div>
+
+        
+        
+        <div class="logo">Exclusive</div>
+
+       
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+            <a href="signup.html">Sign Up</a>
+        </div>
+        <div class="close-icon">
+            <img src="close.svg" alt="cross-icon">
+        </div>
+
+
+        <div class="search-bar">
+            <input type="text" id="user-input" placeholder="What are you looking for?">
+            <img src="SVG,s/search.svg" alt="Search-icon">
+        </div>
+
+        <div class="user-icons">
+            <img src="SVG,s/wishlist.svg" alt="wishlist-icon">
+            <img src="SVG,s/addtocart.svg" alt="Addtocart-icon">
+        </div>
+        </div>
+
+    </nav>
+
+    <!-- ─ Divider Line Between Navigation and Main Content -->
+    <div class="line"></div>
+
+
+
+    <!-- ──  Page Main Layout Start ── -->
+    <main class="page-layout">
+
+        <!-- /* Hero Slider & Sidebar Layout */ -->
+        <section class="content-wrapper">
+            <div class="sidebar">
+                <li class="menu-item">Woman’s Fashion <img src="SVG,s/arrowRight.svg" alt=""></li>
+                <li class="menu-item">Men’s Fashion <img src="SVG,s/arrowRight.svg" alt=""></li>
+                <li>Electronics</li>
+                <li>Home & Lifestyle</li>
+                <li>Medicine</li>
+                <li>Sports & Outdoor</li>
+                <li>Baby's & Toys</li>
+                <li>Groceries & Pets</li>
+                <li>Health & Beauty</li>
+            </div>
+
+            <div class="vertical-line"></div>
+            <div class="slider-content">
+                <div class="hero-slider">
+                    <div class="left-content">
+                        <div class="icon-text">
+                            <img src="PNG,S/apple.png" alt="apple-icon" width="50">
+                            <h1>iPhone 14 Series</h1>
+                        </div>
+                        <div>
+                            <h2 class="main-heading">Up to 10% <br> off Voucher</h2>
+                            <div class="slider-action">
+                                <button class="hero-slider-btn">Shop Now</button>
+                                <img src="SVG,s/arrorwright.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-image">
+                        <img src="PNG,S/iphoneImage.jpg" alt="" width="350" height="300">
+                    </div>
+                </div>
+
+                <div class="promo-slider">
+                    <div class="left-content-2">
+                        <div class="icon-text-2">
+                            <img src="PNG,S/apple.png" alt="apple-icon" width="50">
+                            <h1>iPhone 14 Series</h1>
+                        </div>
+                        <div>
+                            <h2 class="main-heading-2">Up to 10% <br> off Voucher</h2>
+                            <div class="promo-slider-action">
+                                <button class="promo-slider-btn">Shop Now</button>
+                                <img src="SVG,s/arrorwright.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-image-2">
+                        <img src="PNG,S/PS5.png" alt="" width="350" height="300">
+                    </div>
+                </div>
+                <div class="circles">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                </div>
+                </div>
+                </div>
+        </section>
+
+
+      
+
+
+        <!-- ── Flash Sale Section ── -->
+        <section class="flash-sale-section">
+
+            <!--  Today’s Tag -->
+            <div class="flash-sale-top">
+                <div class="redBlock"></div>
+                <span class="Today">Today’s</span>
+            </div>
+
+            <!--  Header: Title + Timer + Arrows -->
+            <div class="flash-sale-header">
+                <div class="top-bar">
+                    <div class="top-bar-heading">
+                        <h3>Flash Sales</h3>
+                    </div>
+
+                    <div class="top-bar-timer">
+
+                        <div class="timer-block">
+                            <span class="label">Days</span>
+                            <label class="value">03</label>
+                        </div>
+                        <span class="dot-1">:</span>
+                        <div class="timer-block">
+                            <span class="label">Hours</span>
+                            <label class="value">23</label>
+                        </div>
+                        <span class="dot-1">:</span>
+                        <div class="timer-block">
+                            <span class="label">Minutes</span>
+                            <label class="value">19</label>
+                        </div>
+                        <span class="dot-1">:</span>
+                        <div class="timer-block">
+                            <span class="label">Seconds</span>
+                            <label class="value">56</label>
+                        </div>
+                    </div>
+
+                    <div class="top-bar-arrows">
+                        <div class="right-arrow"><img src="btnArrowR.svg" alt=""></div>
+                        <div class="left-arrow"><img src="btnArrowL.svg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  Product Slider -->
+            <div class="flash-sale-products">
+                <div class="product-slider">
+                    <div class="product-slider-1">
+                        <div class="image-slider">
+                            <img src="PNG,S/controlar.png" alt="" width="190" height="160">
+                        </div>
+                        <div class="product-btn">
+                            <button>Add To Card</button>
+                        </div>
+                        <div class="discount">-30%</div>
+                        <div class="product-wish"><img src="SVG,s/productWish.svg" alt=""></div>
+                        <div class="product-eye"><img src="eye.svg" alt=""></div>
+                        <div class="slider-1-content">
+                            <h3>HAVIT HV-G92 Gamepad</h3>
+                            <div class="slider-1-price">
+                                <span class="new-price">$120</span>
+                                <span class="old-price">$160</span>
+                            </div>
+                            <div class="slider-1-rating">
+                                <span class="star">★★★★★</span>
+                                <span class="rating-number">(88)</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="product-slider-1">
+                        <div class="image-slider">
+                            <img src="PNG,S/led.png" alt="" width="190" height="160">
+                        </div>
+                        <div class="product-btn">
+                            <button>Add To Card</button>
+                        </div>
+                        <div class="discount">-30%</div>
+                        <div class="product-wish"><img src="SVG,s/productWish.svg" alt=""></div>
+                        <div class="product-eye"><img src="eye.svg" alt=""></div>
+                        <div class="slider-1-content">
+                            <h3>IPS LCD Gaming Monitor</h3>
+                            <div class="slider-1-price">
+                                <span class="new-price">$120</span>
+                                <span class="old-price">$160</span>
+                            </div>
+                            <div class="slider-1-rating">
+                                <span class="star">★★★★★</span>
+                                <span class="rating-number">(88)</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="product-slider-1">
+                        <div class="image-slider">
+                            <img src="PNG,S/keyboard.png" alt="" width="190" height="160">
+                        </div>
+                        <div class="product-btn">
+                            <button>Add To Card</button>
+                        </div>
+                        <div class="discount">-30%</div>
+                        <div class="product-wish"><img src="SVG,s/productWish.svg" alt=""></div>
+                        <div class="product-eye"><img src="eye.svg" alt=""></div>
+                        <div class="slider-1-content">
+                            <h3>AK-900 Wired Keyboard</h3>
+                            <div class="slider-1-price">
+                                <span class="new-price">$120</span>
+                                <span class="old-price">$160</span>
+                            </div>
+                            <div class="slider-1-rating">
+                                <span class="star">★★★★★</span>
+                                <span class="rating-number">(88)</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="product-slider-1">
+                        <div class="image-slider">
+                            <img src="PNG,S/chair.png" alt="" width="190" height="160">
+                        </div>
+                        <div class="product-btn">
+                            <button>Add To Card</button>
+                        </div>
+                        <div class="discount">-30%</div>
+                        <div class="product-wish"><img src="SVG,s/productWish.svg" alt=""></div>
+                        <div class="product-eye"><img src="eye.svg" alt=""></div>
+                        <div class="slider-1-content">
+                            <h3>S-Series Comfort Chair </h3>
+                            <div class="slider-1-price">
+                                <span class="new-price">$120</span>
+                                <span class="old-price">$160</span>
+                            </div>
+                            <div class="slider-1-rating">
+                                <span class="star">★★★★★</span>
+                                <span class="rating-number">(88)</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="product-slider-1">
+                        <div class="image-slider">
+                            <img src="PNG,S/tabel.png" alt="" width="190" height="160">
+                        </div>
+                        <div class="product-btn">
+                            <button>Add To Card</button>
+                        </div>
+                        <div class="discount">-30%</div>
+                        <div class="product-wish"><img src="SVG,s/productWish.svg" alt=""></div>
+                        <div class="product-eye"><img src="eye.svg" alt=""></div>
+                        <div class="slider-1-content">
+                            <h3>Small BookSelf</h3>
+                            <div class="slider-1-price">
+                                <span class="new-price">$120</span>
+                                <span class="old-price">$160</span>
+                            </div>
+                            <div class="slider-1-rating">
+                                <span class="star">★★★★★</span>
+                                <span class="rating-number">(88)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="All-button">
+            <button>View All Products</button>
+        </div>
+
+        <div class="sep"></div>
+
+
+        <!-- ── Category Section ── -->
+        <section class="category-section">
+
+            <div class="flash-sale-top">
+                <div class="redBlock"></div>
+                <span class="Today">Categories</span>
+            </div>
+
+
+            <!-- Header: Browse by Category -->
+            <div class="top-bar-heading-2">
+                <h3>Browse By Category</h3>
+                <div class="heading-icon">
+                    <div class="right-arrow-icon"><img src="btnArrowR.svg" alt="right-icon"></div>
+                    <div class="left-arrow-icon"><img src="btnArrowL.svg" alt="left-icon"></div>
+                </div>
+            </div>
+
+            <!-- Category Grid -->
+            <div class="category">
+                <div class="category-box">
+                    <img src="SVG,s/Category-CellPhone.svg" alt="CellPhone Icon">
+                    <h4>Phones</h4>
+                </div>
+
+                <div class="category-box">
+                    <img src="SVG,s/Category-Computer.svg" alt="Computer Icon">
+                    <h4>Computers</h4>
+                </div>
+
+                <div class="category-box">
+                    <img src="SVG,s/Category-SmartWatch.svg" alt="SmartWatch Icon">
+                    <h4>SmartWatch</h4>
+                </div>
+
+                <div class="category-box">
+                    <img src="SVG,s/Category-Camera.svg" alt="Camera Icon">
+                    <h4>Camera</h4>
+                </div>
+
+                <div class="category-box">
+                    <img src="SVG,s/Category-Headphone.svg" alt="Headphone Icon">
+                    <h4>HeadPhones</h4>
+                </div>
+
+                <div class="category-box">
+                    <img src="SVG,s/Category-Gamepad.svg" alt="Gamepad Icon">
+                    <h4>Gaming</h4>
+                </div>
+            </div>
+
+        </section>
+
+
+        <div class="sep-3"></div>
+
+
+        <!-- ── Best Selling Products Section: Title  ── -->
+        <section class="best-selling-section">
+
+            <div class="flash-sale-top">
+                <div class="redBlock"></div>
+                <span class="Today">This Month</span>
+            </div>
+
+            <div class="container-3">
+                <h3 class="heading-text">
+                    Best Selling<span class="mobile-break"><br></span>Products
+                  </h3>                  
+                <div class="container-3-btn">
+                    <button>View All</button>
+                </div>
+            </div>
+
+            <div class="best-selling-product">
+                <div class="product-slider-1">
+                    <div class="product-slider-1-best">
+                        <div class="image-slider">
+                            <img src="PNG,S/ee9a38001e9f94261b28e16ea21bacb4144473e8.png" alt="" width="180"
+                                height="160">
+                        </div>
+                        <div class="product-btn">
+                            <button>Add To Card</button>
+                        </div>
+
+                        <div class="product-wish"><img src="SVG,s/productWish.svg" alt=""></div>
+                        <div class="product-eye"><img src="eye.svg" alt=""></div>
+                        <div class="slider-1-content">
+                            <h3>The north coat</h3>
+                            <div class="slider-1-price">
+                                <span class="new-price">$260</span>
+                                <span class="old-price">$360</span>
+                            </div>
+                            <div class="slider-1-rating">
+                                <span class="star">★★★★★</span>
+                                <span class="rating-number">(88)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product-slider-1">
+                    <div class="product-slider-1-best">
+                        <div class="image-slider">
+                            <img src="PNG,S/4f3ca1d12722dbdf98f25179d3c0b785988c513d.png" alt="" width="180"
+                                height="160">
+                        </div>
+                        <div class="product-btn">
+                            <button>Add To Card</button>
+                        </div>
+                        <div class="product-wish"><img src="SVG,s/productWish.svg" alt=""></div>
+                        <div class="product-eye"><img src="eye.svg" alt=""></div>
+                        <div class="slider-1-content">
+                            <h3>Gucci duffle bag</h3>
+                            <div class="slider-1-price">
+                                <span class="new-price">$960</span>
+                                <span class="old-price">$1160</span>
+                            </div>
+                            <div class="slider-1-rating">
+                                <span class="star">★★★★★</span>
+                                <span class="rating-number">(88)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-slider-1">
+                    <div class="product-slider-1-best">
+                        <div class="image-slider">
+                            <img src="PNG,S/6739d39dc218c97b645d616c8188a4f2e6aaf84b.png" alt="" width="180"
+                                height="160">
+                        </div>
+                        <div class="product-btn">
+                            <button>Add To Card</button>
+                        </div>
+                        <div class="product-wish"><img src="SVG,s/productWish.svg" alt=""></div>
+                        <div class="product-eye"><img src="eye.svg" alt=""></div>
+                        <div class="slider-1-content">
+                            <h3>RGB liquid CPU Cooler</h3>
+                            <div class="slider-1-price">
+                                <span class="new-price">$160</span>
+                                <span class="old-price">$170</span>
+                            </div>
+                            <div class="slider-1-rating">
+                                <span class="star">★★★★★</span>
+                                <span class="rating-number">(88)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-slider-1">
+                    <div class="product-slider-1-best">
+                        <div class="image-slider">
+                            <img src="PNG,S/e86f6e872757d20a14861e2e0ebd4e9889693f59.png" alt="" width="180"
+                                height="160">
+                        </div>
+                        <div class="product-btn">
+                            <button>Add To Card</button>
+                        </div>
+                        <div class="product-wish"><img src="SVG,s/productWish.svg" alt=""></div>
+                        <div class="product-eye"><img src="eye.svg" alt=""></div>
+                        <div class="slider-1-content">
+                            <h3>Small BookSelf</h3>
+                            <div class="slider-1-price">
+                                <span class="new-price">$360</span>
+                            </div>
+                            <div class="slider-1-rating">
+                                <span class="star">★★★★★</span>
+                                <span class="rating-number">(88)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Hero Section ── -->
+        <section class="hero-section">
+
+            <!-- Promotional Text Content -->
+            <div class="promo-content">
+                <h4>Categories</h4>
+                <h2> Enhance Your<br />
+                    <span>Music Experience</span>
+                </h2>
+
+                <!-- Countdown Timer -->
+                <div class="promo-timer">
+                    <div class="timer-unit">
+                        <h3 class="timer-value">23</h3>
+                        <p class="timer-label">Hours</p>
+                    </div>
+
+                    <div class="timer-unit">
+                        <h3 class="timer-value">05</h3>
+                        <p class="timer-label">Days</p>
+                    </div>
+
+                    <div class="timer-unit">
+                        <h3 class="timer-value">59</h3>
+                        <p class="timer-label">Minutes</p>
+                    </div>
+
+                    <div class="timer-unit">
+                        <h3 class="timer-value">35</h3>
+                        <p class="timer-label">Seconds</p>
+                    </div>
+                </div>
+
+                <!-- Call-to-Action Button -->
+                <div class="hero-sec-btn">
+                    <button>Buy Now!</button>
+                </div>
+            </div>
+
+            <!-- Hero Section Image -->
+            <div class="img-wrapper">
+                <img src="PNG,S/3cc943ca7e210f637fc0504b7d93cd207df744c2.png" alt="">
+            </div>
+        </section>
+
+
+        <!--  Section Title Bar: Categories + Explore Our Products Heading with Arrows -->
+        <section class="explore-products-section">
+
+            <!--  (Categories line) -->
+            <div class="flash-sale-top">
+                <div class="redBlock"></div>
+                <span class="Today">Categories</span>
+            </div>
+
+            <!-- Explore Our Products Heading -->
+            <div class="top-bar-heading-2">
+                <h3>Explore Our Products</h3>
+                <div class="heading-icon">
+                    <div class="right-arrow-Products"><img src="btnArrowR.svg" alt="right-icon"></div>
+                    <div class="left-arrow-Products"><img src="btnArrowL.svg" alt="left-icon"></div>
+                </div>
+
+            </div>
+
+
+            <!--  Explore Products - Product Cards Grid -->
+            <div class="explore-products-grid">
+
+                <!-- Product Card -->
+                <div class="product-card">
+                    <div class="product-card-inner">
+
+                        <!-- product image, name, price, etc. -->
+                        <div class="product-image-wrapper">
+                            <img class="product-image" src="PNG,S/78e727118c99fe72271cf43f5e3566b39ca7c8f4.jpg" alt="">
+                        </div>
+                        <div class="product-card-btn">
+                            <button>Add To Card</button>
+                        </div>
+
+                        <div class="wish"><img src="SVG,s/productWish.svg" alt=""></div>
+                        <div class="eye"><img src="eye.svg" alt=""></div>
+                        <div class="slider-1-content">
+                            <h3>Breed Dry Dog Food</h3>
+                            <div class="slider-1-price">
+                                <span class="new-price">$100</span>
+
+                            </div>
+                            <div class="slider-1-rating">
+                                <span class="star">★★★★★</span>
+                                <span class="rating-number">(35)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card -->
+                <div class="product-card">
+
+                    <!-- product image, name, price, etc. -->
+                    <div class="product-image-wrapper">
+                        <img class="product-image" src="PNG,S/e60892a4f0a3d5d144dce622c7338ec5be12908f.png" alt="">
+                    </div>
+                    <div class="product-card-btn">
+                        <button>Add To Card</button>
+                    </div>
+
+                    <div class="product-wish"><img src="SVG,s/productWish.svg" alt=""></div>
+                    <div class="product-eye"><img src="eye.svg" alt=""></div>
+                    <div class="slider-1-content">
+                        <h3>CANON EOS DSLR Camera</h3>
+                        <div class="slider-1-price">
+                            <span class="new-price">$360</span>
+
+                        </div>
+                        <div class="slider-1-rating">
+                            <span class="star">★★★★★</span>
+                            <span class="rating-number">(95)</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Product Card -->
+                <div class="product-card">
+                    <!-- product image, name, price, etc. -->
+                    <div class="product-image-wrapper">
+                        <img class="product-image" src="PNG,S/203be522b7b02d10672f6f6147762cf52bfcfc54.png" alt="">
+                    </div>
+                    <div class="product-card-btn">
+                        <button>Add To Card</button>
+                    </div>
+
+                    <div class="product-wish"><img src="SVG,s/productWish.svg" alt=""></div>
+                    <div class="product-eye"><img src="eye.svg" alt=""></div>
+                    <div class="slider-1-content">
+                        <h3>ASUS FHD Gaming Laptop</h3>
+                        <div class="slider-1-price">
+                            <span class="new-price">$700</span>
+                        </div>
+                        <div class="slider-1-rating">
+                            <span class="star">★★★★★</span>
+                            <span class="rating-number">(325)</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Product Card -->
+                <div class="product-card">
+
+                    <!-- product image, name, price, etc. -->
+                    <div class="product-image-wrapper">
+                        <img class="product-image" src="PNG,S/e7bdd11662ea1dfc2d615a5bb054e139a764f306.png" alt="">
+                    </div>
+                    <div class="product-card-btn">
+                        <button>Add To Card</button>
+                    </div>
+
+                    <div class="product-wish"><img src="SVG,s/productWish.svg" alt=""></div>
+                    <div class="product-eye"><img src="eye.svg" alt=""></div>
+                    <div class="slider-1-content">
+                        <h3>Curology Product Set</h3>
+                        <div class="slider-1-price">
+                            <span class="new-price">$500</span>
+                        </div>
+                        <div class="slider-1-rating">
+                            <span class="star">★★★★★</span>
+                            <span class="rating-number">(145)</span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Product Card -->
+                <div class="product-card">
+                    <!-- product image, name, price, etc. -->
+                    <div class="product-image-wrapper">
+                        <img class="product-image" src="PNG,S/5f4ea9acf805319ddf3897fc9daaf58559542260.png" alt="">
+                    </div>
+                    <div class="product-card-btn">
+                        <button>Add To Card</button>
+                    </div>
+
+                    <div class="product-wish"><img src="SVG,s/productWish.svg" alt=""></div>
+                    <div class="product-eye"><img src="eye.svg" alt=""></div>
+                    <div class="slider-1-content">
+                        <div class="discount-Products">New</div>
+                        <h3>Kids Electric Car</h3>
+                        <div class="slider-1-price">
+                            <span class="new-price">$960</span>
+                        </div>
+                        <div class="slider-1-rating">
+                            <span class="star">★★★★★</span>
+                            <span class="rating-number">(85)</span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Product Card -->
+                <div class="product-card">
+
+                    <!-- product image, name, price, etc. -->
+                    <div class="product-image-wrapper">
+                        <img class="product-image" src="PNG,S/d0b7bb25884f6fdfc1357634d7d7b09e05755c2f.png" alt="">
+                    </div>
+                    <div class="product-card-btn">
+                        <button>Add To Card</button>
+                    </div>
+
+                    <div class="product-wish"><img src="SVG,s/productWish.svg" alt=""></div>
+                    <div class="product-eye"><img src="eye.svg" alt=""></div>
+                    <div class="slider-1-content">
+                        <div class="discount-Products">New</div>
+                        <h3>Jr. Zoom Soccer Cleats</h3>
+                        <div class="slider-1-price">
+                            <span class="new-price">$1160</span>
+                        </div>
+                        <div class="slider-1-rating">
+                            <span class="star">★★★★★</span>
+                            <span class="rating-number">(35)</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Product Card -->
+                <div class="product-card">
+
+                    <!-- product image, name, price, etc. -->
+                    <div class="product-image-wrapper">
+                        <img class="product-image" src="PNG,S/288e013365fe639fccc1fe4168fca740ef1f85e7.png" alt="">
+                    </div>
+                    <div class="product-card-btn">
+                        <button>Add To Card</button>
+                    </div>
+
+                    <div class="product-wish"><img src="SVG,s/productWish.svg" alt=""></div>
+                    <div class="product-eye"><img src="eye.svg" alt=""></div>
+                    <div class="slider-1-content">
+                        <div class="discount-Products">New</div>
+                        <h3>GP11 Shooter USB Gamepad</h3>
+                        <div class="slider-1-price">
+                            <span class="new-price">$660</span>
+                        </div>
+                        <div class="slider-1-rating">
+                            <span class="star">★★★★★</span>
+                            <span class="rating-number">(55)</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Product Card -->
+                <div class="product-card">
+
+                    <!-- product image, name, price, etc. -->
+                    <div class="product-image-wrapper">
+                        <img class="product-image" src="PNG,S/04a1915fd6cedd7c8b1073685c5f1be1b50e1ac6.png" alt="">
+                    </div>
+                    <div class="product-card-btn">
+                        <button>Add To Card</button>
+                    </div>
+
+                    <div class="product-wish"><img src="SVG,s/productWish.svg" alt=""></div>
+                    <div class="product-eye"><img src="eye.svg" alt=""></div>
+                    <div class="slider-1-content">
+                        <div class="discount-Products">New</div>
+                        <h3>Quilted Satin Jacket</h3>
+                        <div class="slider-1-price">
+                            <span class="new-price">$660</span>
+                        </div>
+                        <div class="slider-1-rating">
+                            <span class="star">★★★★★</span>
+                            <span class="rating-number">(55)</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <div class="All-button">
+            <button>View All Products</button>
+        </div>
+
+        <!-- ── New Arrival Section ── -->
+        <section class="new-arrival-section">
+            <div class="flash-sale-top">
+                <div class="redBlock"></div>
+                <span class="Today">Featured</span>
+            </div>
+
+            <div class="top-bar-heading-2">
+                <h3>New Arrival</h3>
+            </div>
+
+
+
+            <div class="new-arrival">
+
+                <!-- PS5 -->
+                <div class="ps5">
+                    <img src="PNG,S/1c360f790c1817d3afa266b3c9f8c81ff0ed4428.png" alt="">
+                    <div class="ps5-content">
+                        <h3>PlayStation 5</h3>
+                        <p>Black and White version of the PS5 <br>coming out on sale.</p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+
+
+
+                <!-- Women's Collection -->
+                <div class="Womens-Collections">
+                    <div class="women-img">
+                        <img src="PNG,S/455c8d6408463f7e8f57dd3048a2444dbfa0cb90.jpg" alt="">
+                        <div class="Womens-Collections-content">
+                            <h3>Women’s Collections</h3>
+                            <p>Featured woman collections that <br>give you another vibe.</p>
+                            <button>Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Speakers -->
+                <div class="Speakers">
+                    <div class="Speakers-img">
+                        <img src="PNG,S/e5659d572977438364a41d7e8c9d1e9a794d43ed.png" alt="">
+                    </div>
+                    <div class="Speakers-content">
+                        <h3>Speakers</h3>
+                        <p>Amazon wireless speakers.</p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+
+
+                  <!-- Perfume -->
+                <div class="Perfume">
+                    <div class="Perfume-img">
+                        <img src="PNG,S/15315cd15102562cf220504d288fa568eaa816dd.png" alt="">
+                    </div>
+                    <div class="Perfume-content">
+                        <h3>Perfume</h3>
+                        <p>GUCCI INTENSE OUD EDP</p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ───── Customer Support Info Section ───── -->
+        <section class="customer-support">
+
+            <div class="support-card">
+                <div class="support-card-inner">
+                    <img src="SVG,s/icon-delivery.svg" alt="icon-delivery">
+                </div>
+                <div class="support-card-content">
+                    <h3>FREE AND FAST DELIVERY</h3>
+                    <p>Free delivery for all orders over $140</p>
+                </div>
+            </div>
+    
+            <div class="support-card">
+                <div class="support-card-inner">
+                    <img src="SVG,s/Services.svg" alt="Services-icon">
+                </div>
+                <div class="support-card-content">
+                    <h3>24/7 CUSTOMER SERVICEY</h3>
+                    <p>Friendly 24/7 customer support</p>
+                </div>
+            </div>
+    
+            <div class="support-card">
+                <div class="support-card-inner">
+                    <img src="SVG,s/secure.svg" alt="Icon-secure">
+                </div>
+                <div class="support-card-content">
+                    <h3>MONEY BACK GUARANTEE</h3>
+                    <p>We reurn money within 30 days</p>
+                </div>
+            </div>
+    
+        </section>
+    </main>
+
+    <footer class="footer-section">
+        <div class="footer-column">
+            <h3>Exclusive</h3>
+            <h4>Subscribe</h4>
+            <p>Get 10% off your first order</p>
+            <div class="email-input">
+                <input type="email" id="input-email" placeholder="Enter your email">
+                <img src="SVG,s/EmailVector.svg" alt="">
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3>Support</h3>
+            <p class="Support">111 Bijoy sarani, Dhaka,<br>DH 1515, Bangladesh.</p>
+            <p>exclusive@gmail.com</p>
+            <p class="number">+88015-88888-9999</p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Account</h3>
+            <h5>My Account</h5>
+            <h5>Login / Register</h5>
+            <h5>Cart</h5>
+            <h5>Wishlist</h5>
+            <h5>Shop</h5>
+        </div>
+
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <h5>Privacy Policy</h5>
+            <h5>Terms Of Use</h5>
+            <h5>FAQ</h5>
+            <h5>Contact</h5>
+        </div>
+
+        <div class="footer-column">
+            <h3>Download App</h3>
+            <p id="discount-user">Save $3 with App New User Only</p>
+            <div class="download-container">
+                <div class="qr-code">
+                    <img src="PNG,S/991387c05dd6d44594e01b675513068803e2426d.jpg" alt="QR Code" />
+                </div>
+
+                <div class="store-buttons">
+                    <img src="PNG,S/a61d4c7110b18ab55a1e1a07ebf54a46ebb07284.png" alt="">
+                    <img src="PNG,S/38932d5accb54c528f9bcf326ca48ea29bd6d890.png" alt="">
+                </div>
+            </div>
+
+            <div class="social-icons">
+                <img src="SVG,s/Vector.svg" alt="">
+                <img src="SVG,s/Vector (1).svg" alt="">
+                <img src="SVG,s/Vector (2).svg" alt="">
+                <img src="SVG,s/Vector (3).svg" alt="">
+            </div>
+        </div>
+
+    </footer>
+    <div class="footer-bottom">
+        <p>© Copyright Rimel 2024. All rights reserved</p>
+    </div>
+
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>

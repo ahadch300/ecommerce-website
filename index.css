@@ -1,0 +1,1542 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+/* ───────────────  Top Header Banner Styles ─────────────── */
+/* Contains layout and styling for promo message + language dropdown */
+
+.top-header {
+  background-color: black;
+  color: white;
+  padding: 5px 20px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+
+.center-text {
+  flex: 1;
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.center-text-p {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.4;
+}
+
+.center-text a {
+  font-weight: 500;
+  color: white;
+  margin-left: 8px;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.center-text a:hover {
+  color: #db4444;
+}
+.language {
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: lightgray;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger {
+  display: none;
+}
+.close-icon{
+  display: none;
+}
+
+
+.navbar {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0 20px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+.navbar-links a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  position: relative;
+}
+
+.navbar-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.263);
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 50px;
+}
+
+.navbar-links a:hover::after,
+.navbar-links a.active::after {
+  width: 100%;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 10px 15px;
+  border-radius: 8px;
+  gap: 10px;
+}
+.search-bar input {
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 300;
+  outline: none;
+  flex: 1;
+}
+
+.search-bar img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.user-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+/* <!-- ─ Divider Line Between Navigation and Main Content --> */
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(0, 0, 0);
+  opacity: 10%;
+}
+
+/* ─ Main Layout Container (Centers All Page Content) */
+
+.page-layout {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.sidebar li {
+  list-style: none;
+  font-size: 19px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 40px;
+  cursor: pointer;
+  transition: ease-in-out;
+}
+
+.sidebar li:hover {
+  color: rgba(0, 0, 0, 0.632);
+}
+
+.content-wrapper {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  /* aur styles */
+  padding: 50px 0;
+}
+
+.vertical-line {
+  width: 1px;
+  background-color: #e0e0e0;
+  height: 55vh;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 15px;
+}
+
+.left-content,
+.right-image {
+  flex: 1;
+  padding: 20px 40px;
+}
+
+.hero-slider {
+  background-color: black;
+  width: 100%;
+  margin: 55px 0 60px 45px;
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.icon-text h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.left-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-heading {
+  color: white;
+  font-size: 48px;
+  font-weight: 600;
+}
+.hero-slider-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-slider-btn::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 5px; /* ← yahan se spacing milegi */
+}
+.slider-action {
+  display: flex;
+  align-items: center;
+}
+
+/* promo-slider */
+
+.left-content-2,
+.right-image-2 {
+  flex: 1;
+  padding: 20px 40px;
+}
+
+/* Hero Slider & Sidebar Layout */
+
+.promo-slider {
+  background-color: black;
+  width: 100%;
+  margin: 55px 0 60px 45px;
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+  display: none;
+}
+
+.icon-text-2 h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.icon-text-2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.left-content-2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-heading-2 {
+  color: white;
+  font-size: 48px;
+  font-weight: 600;
+}
+.promo-slider-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.promo-slider-btn::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 5px; /* ← yahan se spacing milegi */
+}
+.promo-slider-action {
+  display: flex;
+  align-items: center;
+}
+
+.circles {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: -90px;
+  margin-bottom: 40px;
+}
+
+.dot {
+  width: 13px;
+  height: 13px;
+  background-color: gray;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #ffffff;
+  position: relative;
+}
+
+.dot.active::before {
+  content: "";
+  background-color: #db4444;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 1;
+}
+/*  Flash Sale Section: Container */
+.flash-sale-top {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.flash-sale-section {
+  margin-top: 160px;
+  padding: 0; /* Ensure no side padding */
+  max-width: 100%;
+  width: 100%;
+}
+.flash-sale-products {
+  width: 100vw;
+}
+
+.redBlock {
+  padding: 20px 4px;
+  border-radius: 5px;
+  background-color: #db4444;
+  display: flex;
+  width: 1%;
+}
+.Today {
+  color: #db4444;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/*  Flash Sale Header: Title + Timer + Arrows */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.timer-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top-bar-timer {
+  display: flex;
+  gap: 10px;
+  margin-right: 400px;
+}
+
+.dot-1 {
+  background: transparent;
+  color: #db4444;
+  font-size: 30px;
+  border-radius: 50px;
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-bar-heading h3 {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin: 20px 0;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.value {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+.top-bar-arrows {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.right-arrow {
+  background-color: rgba(211, 211, 211, 0.433);
+  padding: 5px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.left-arrow {
+  background-color: rgba(211, 211, 211, 0.433);
+  padding: 5px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/*  Flash Sale Products: Horizontal Slider */
+
+.product-slider {
+  display: flex;
+  gap: 35px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  display: flex;
+  gap: 35px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+}
+
+.product-slider::-webkit-scrollbar {
+  display: none;
+}
+
+/*  Product Card Styles (Each Item) */
+.image-slider {
+  background-color: #f5f5f5;
+  padding: 50px;
+  border-radius: 5px;
+  width: fit-content;
+}
+.product-slider-1 {
+  position: relative;
+  flex-shrink: 0;
+  min-width: 250px;
+  margin-right: 0;
+}
+
+.slider-1-content h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  padding: 15px 0 5px 0;
+  margin: 0;
+  font-weight: 500;
+}
+
+.slider-1-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.new-price {
+  color: #db4444;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.old-price {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  opacity: 50%;
+  text-decoration: line-through;
+}
+
+.slider-1-rating {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  color: #ffad33;
+  font-size: 20px;
+}
+
+.rating-number {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 50%;
+}
+
+/*  Product Labels (Discount, Wishlist, Eye) */
+.discount {
+  padding: 4px 12px;
+  background-color: #db4444;
+  width: 35px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  gap: 10px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.product-wish {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: white;
+  padding: 3px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.product-eye {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50px;
+  right: 12px;
+  background-color: white;
+  padding: 3px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+/*  Add to Cart Button on Hover */
+.product-btn button {
+  position: absolute;
+  bottom: 95px;
+  border: none;
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  border-radius: 0 0 4px 4px;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.product-slider-1:hover .product-btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ── View All Products Button (Center Aligned Section Button) ── */
+.All-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.All-button button {
+  padding: 16px 48px 16px 48px;
+  background-color: #db4444;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* ── Section Divider Line (Subtle Horizontal Separator) ── */
+.sep {
+  height: 1px;
+  background-color: #000000;
+  opacity: 20%;
+  margin-bottom: 50px;
+}
+
+/* ── Browse by Category Section ── */
+
+/* Header: Title with Left/Right Arrow Icons */
+.top-bar-heading-2 {
+  display: flex;
+  justify-content: space-between;
+}
+.top-bar-heading-2 h3 {
+  font-size: 36px;
+  font-weight: 600;
+  margin: 25px 0;
+}
+
+/* Arrow Icons beside Heading */
+.heading-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.right-arrow-icon {
+  background-color: rgba(211, 211, 211, 0.433);
+  padding: 5px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.left-arrow-icon {
+  background-color: rgba(211, 211, 211, 0.433);
+  padding: 5px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Category Boxes Grid */
+.category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  margin: 30px 0;
+}
+
+
+/* Individual Category Box */
+.category-box {
+  width: 170px;
+  height: 145px;
+  border: 1px solid #0000004d;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+/* Category Box Title */
+.category-box h4 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s ease-in-out;
+}
+
+/* Hover Effects for Category Box */
+.category-box:hover {
+  background-color: #db4444;
+  border: 1px solid transparent; /*  Fixes jump issue */
+}
+
+.category-box:hover h4 {
+  color: #ffffff;
+}
+
+.category-box:hover img {
+  filter: brightness(0) invert(1);
+}
+
+/* Active Category Styles */
+.active-category {
+  background-color: #db4444;
+  border: 1px solid transparent;
+}
+.active-category h4 {
+  color: white;
+}
+.active-category img {
+  filter: brightness(0) invert(1);
+}
+
+
+/* Header Container for Best Selling Products (Reused Below Category Section) */
+.container-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.mobile-break {
+  display: none;
+}
+
+
+
+.best-selling-section {
+  margin-top: 70px;
+}
+
+.sep-3 {
+  height: 1px;
+  background-color: #000000;
+  opacity: 30%;
+  margin-top: 80px;
+}
+
+.container-3 h3 {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin: 20px 0;
+}
+
+.container-3-btn button {
+  padding: 16px 48px 16px 48px;
+  background-color: #db4444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.best-selling-product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+
+/* ── Hero Section Styles ── */
+
+/* Layout for Main Hero Section */
+.hero-section {
+  display: flex;
+  margin-top: 100px;
+  background-color: black;
+  height: 500px;
+}
+
+/* Text and Headings Area */
+.promo-content {
+  padding: 50px;
+  flex: 1;
+  min-width: 400px; /*  Ensure text has enough room */
+}
+
+  /* Styling for heading, subhead, spacing */
+.promo-content h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+  color: white;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  white-space: normal; /* important */
+  word-break: break-word;
+}
+.promo-content h2 span {
+  display: block; /*  force "Music Experience" to appear together in one line */
+}
+
+.promo-content h4 {
+  color: #00ff66;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.promo-content h2 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 60px;
+}
+
+/* Countdown Timer Styling */
+.timer-value {
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.timer-label {
+  color: black;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  font-size: 11px;
+}
+.promo-timer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+  /* Each timer box (value + label) */
+.timer-unit {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+/* Button Styling */
+.hero-sec-btn button {
+  border: none;
+  background-color: #00ff66;
+  padding: 16px 48px 16px 48px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Hero Section Image */
+.hero-sec-btn {
+  padding: 40px 0;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  /* Image sizing and alignment */
+.img-wrapper img {
+  width: 700px;
+  height: auto;
+}
+.img-wrapper {
+  flex: 1;
+  max-width: 50%;
+  background: radial-gradient(circle at right, #2b2b2b 50%, #000 100%);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.right-arrow-Products,
+.left-arrow-Products {
+  background-color: rgba(211, 211, 211, 0.433);
+  padding: 5px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* ─── Explore Products Section ─── */
+.explore-products-section{
+  margin-top: 80px;
+}
+
+/* ─── Product Grid Layout ─── */
+.explore-products-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+}
+
+/* ─── Spacing for Products After 4th Card ─── */
+.explore-products-grid > .product-card:nth-child(n + 5) {
+  margin-top: 30px;
+}
+
+/* ─── Green Discount Badge ─── */
+.discount-Products {
+  padding: 4px 12px;
+  background-color: #00ff66;
+  width: 35px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  gap: 10px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+/* ─── Product Image Styling ─── */
+.product-image{
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+  display: block;
+}
+
+
+/* ─── Product Image Container ─── */
+.product-image-wrapper {
+  width: 258px;
+  height: 245px;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ─── Product Card Wrapper ─── */
+.product-card {
+  position: relative;
+}
+
+
+/* ─── Wishlist Icon ─── */
+.wish {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: white;
+  padding: 3px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/* ─── Eye (View) Icon ─── */
+.eye {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50px;
+  right: 12px;
+  background-color: white;
+  padding: 3px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+/* ─── Add to Cart Button ─── */
+.product-card-btn button {
+  position: absolute;
+  bottom: 95px;
+  border: none;
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  border-radius: 0 0 4px 4px;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+/* ─── Show Button on Hover ─── */
+.product-card:hover .product-card-btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.product-card.hover .product-card-btn button {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ───── PS5 Product Card Styles ───── */
+.ps5 {
+  width: 580px;
+  height: 600px;
+  border-radius: 4px;
+  position: relative;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+.ps5 img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-52%);
+}
+
+.new-arrival {
+  position: relative;
+}
+
+.ps5-content {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  padding: 30px;
+}
+
+.ps5-content h3 {
+  font-weight: 600;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  padding: 5px 0;
+  margin: 0;
+}
+
+.ps5-content p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 5px 0;
+  margin: 0;
+}
+
+.ps5-content button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  background: transparent;
+  border: 0;
+  color: white;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.ps5-content::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 2px; /* ← yahan se spacing milegi */
+}
+
+
+/* ───── Women's Collection Card Styles ───── */
+.Womens-Collections {
+  width: 580px;
+  height: 284px;
+  border-radius: 4px;
+  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.women-img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* Optional: image cut na niklay */
+}
+
+.Womens-Collections img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: auto;
+  object-fit: cover; /* optional: look better */
+}
+
+.Womens-Collections-content {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  padding: 30px;
+}
+
+.Womens-Collections-content h3 {
+  font-weight: 600;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  padding: 5px 0;
+  margin: 0;
+}
+
+.Womens-Collections-content p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 5px 0;
+  margin: 0;
+}
+
+.Womens-Collections-content button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  background: transparent;
+  border: 0;
+  color: white;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.Womens-Collections-content::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 2px; /* ← yahan se spacing milegi */
+}
+
+.women-img img {
+  transform: translateX(-30%);
+}
+
+
+/* ───── Speakers Product Card Styles ───── */
+.Speakers {
+  width: 270px;
+  height: 284px;
+  background: radial-gradient(circle, #2b2b2b 0%, #111111 100%);
+   position: relative;
+   position: absolute; 
+  bottom: 0;
+  left: 52%;
+  border-radius: 4px;
+}
+
+.Speakers-img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;   
+}
+
+.Speakers-img img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-40%);
+  height: 100%;
+  width: auto;
+  object-fit: cover; /* optional: look better */
+}
+
+.Speakers-content {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  padding: 30px;
+}
+
+/* ───── Perfume & Speakers Product Card Styles ───── */
+.Speakers-content h3,
+.Perfume-content h3 {
+  font-weight: 600;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.Speakers-content p,
+.Perfume-content p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 5px 0;
+  margin: 0;
+}
+
+.Speakers-content button,
+.Perfume-content button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  background: transparent;
+  border: 0;
+  color: white;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.Speakers-content::after,
+.Perfume-content button::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 2px; /* ← yahan se spacing milegi */
+}
+
+.Perfume {
+  width: 270px;
+  height: 284px;
+  background: radial-gradient(circle, #2b2b2b 0%, #111111 100%);
+  position: relative;
+  position: absolute;
+  bottom: 0;
+  left: 78%;
+  border-radius: 4px;
+}
+
+.Perfume-img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* Optional: image cut na niklay */
+}
+
+.Perfume-img img {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: auto;
+  object-fit: cover; /* optional: look better */
+}
+
+.Perfume-content {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  padding: 30px;
+}
+
+/* ───── Customer Support Cards Section Styles ───── */
+
+
+/* === Main Wrapper for All Support Cards === */
+.customer-support {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 130px auto;
+  gap: 100px;
+}
+
+/* === Individual Support Card Styling === */
+.support-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* === Icon Circle Background (Outer & Inner) === */
+.support-card-inner {
+  background-color: black;
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  position: relative;
+}
+
+/* === Support Card Content (Title + Paragraph) === */
+.support-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.support-card-content h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.support-card-content p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+  padding-top: 5px;
+}
+
+/* === Decorative Background Circle (Behind Icon) === */
+.support-card-inner::before {
+  background-color: #2f2e30;
+  width: 80px;
+  height: 80px;
+  content: "";
+  position: absolute;
+  opacity: 0.3;
+  border-radius: 50%;
+}
+
+.support-card-inner img{
+  color: white;
+  width: 30px;
+  height: 30px;
+}
+/* Footer */
+
+.footer-section {
+  background-color: black;
+  width: 100%;
+  padding: 100px 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.footer-column {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+}
+
+.footer-column h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+}
+
+.footer-column h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 15px 0 10px 0;
+}
+
+.footer-column h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+.footer-column p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 5px 0 15px 0;
+}
+
+#input-email {
+  background: transparent;
+  border: none;
+  color: #fafafa;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.email-input {
+  border: 1px solid #fafafa;
+  padding: 12px 16px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.email-input img {
+  cursor: pointer;
+}
+
+#input-email:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.Support {
+  padding-top: 10px;
+  line-height: 20px;
+}
+
+#discount-user {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fafafa;
+}
+.download-container {
+  display: flex;
+  margin: 0;
+  position: relative;
+  padding: 0;
+}
+
+.qr-code img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.store-buttons {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.store-buttons img {
+  display: block;
+  width: 135px;
+  height: 40px; /* 🔥 Force both images to same height */
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-start; /* center horizontally */
+  gap: 15px; /* spacing between icons */
+  margin-top: 20px;
+}
+.social-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease;
+}
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  background-color: black;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: #aaa;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px 0;
+  font-family: "Poppins", sans-serif;
+}

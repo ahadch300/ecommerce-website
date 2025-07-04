@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.signUP{
+    margin: 0 ;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0;
+    gap: 130px;
+   
+  }
+
+.signUP-img img{
+    width: 750px;
+    width: 50vw;
+  
+}
+
+.signUP-img{
+    margin-left: calc((128vw - 1200px) / -2);
+}
+
+.account h1{
+    font-size: 36px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+
+.account p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 50px;
+}
+
+.signupForm {
+    width: 300px;
+  }
+
+  .form-group {
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  .form-group input {
+    width: 372px;
+    border: none;
+    border-bottom: 1px solid #00000070;
+    padding: 10px 0;
+    font-size: 16px;
+    outline: none;
+  }
+
+  .form-group input::placeholder {
+    color: #aaa;
+  }
+
+  .create-acc-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .create-acc-btn button{
+    width: 372px;
+    height: 56px;
+    border: none;
+    background-color: #DB4444;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .Sign-up-google{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+
+  .Sign-up-google button{
+    width: 372px;
+    height: 56px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid rgb(183, 183, 183);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+
+  .already-acc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+  }
+
+  .already-acc h3{
+    font-size: 16px;
+    font-weight: 100;
+    color: #000000b9;
+    font-family: "Poppins", sans-serif;
+  }
+
+
+  .already-acc a{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    border-bottom: 1px solid #0000006e;
+    padding: 2px 0;
+    text-decoration: none;
+    color: #000000cc;
+  }
+
+  .logInOrFor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logInBtn button{
+    border: none;
+    width: 144px;
+    height: 56px;
+    border-radius: 4px;
+    color: white;
+    background-color: #DB4444;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+  }
+
+  .forget-pass a{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: #DB4444;
+    cursor: pointer;
+    text-decoration: none;
+  }

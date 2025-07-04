@@ -1,0 +1,63 @@
+@media (max-width: 700px) {
+  .signUP {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 0;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .signUP-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .account h1,p {
+    padding: 0 30px;
+  }
+
+  .form-container {
+    width: 50px;
+    padding: 0 30px;
+  }
+
+  .account h1 {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .account p {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 50px;
+  }
+
+  .form-group input {
+    width: 250px;
+    border: none;
+    border-bottom: 1px solid #00000070;
+    padding: 10px 0;
+    font-size: 16px;
+    outline: none;
+    border-bottom: 1px solid #00000070;
+    padding: 10px 0;
+ }
+
+ .create-acc-btn button{
+    width: 250px;
+    height: 56px;
+    border-radius: 4px;
+  }
+
+  .Sign-up-google button{
+    width: 250px;
+    height: 56px;
+  }
+
+
+}

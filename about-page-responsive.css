@@ -1,0 +1,68 @@
+@media (max-width: 700px) {
+
+  .breadcrumb {
+    width: 100%;
+    padding: 20px;
+    margin: 40px auto;
+  }
+
+  .our-story {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .our-story-content {
+    width: 100%;
+    align-items: center;
+    
+  }
+
+  .heading h1 {
+    font-size: 36px;
+  }
+
+  .our-story-img {
+    width: 100%;
+    margin: 0;
+    margin-top: 100px;
+  }
+
+  .stats-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .team-section{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+   
+  }
+
+  .team-member-img{
+    padding-top: 30px;
+    width: 350px;
+    height: 395px;
+    border-radius: 4px;
+    
+  }
+  .team-member-content h3{
+    margin: 0;
+    padding-top: 30px;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .team-member-content h4{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+  }
+
+}
