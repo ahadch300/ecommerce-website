@@ -1,17 +1,16 @@
-const hamburger = document.querySelector(".hamburger")
-const navbarLinks = document.querySelector(".navbar-links")
-const closeIcon = document.querySelector(".close-icon")
+const hamburger = document.querySelector(".hamburger");
+const navbarLinks = document.querySelector(".navbar-links");
+const closeIcon = document.querySelector(".close-icon");
 
-hamburger.addEventListener("click", function(){
-  navbarLinks.classList.toggle("show-navbar")
-  closeIcon.classList.toggle("show-close")
-  
-})
+hamburger.addEventListener("click", function () {
+  navbarLinks.classList.toggle("show-navbar");
+  closeIcon.classList.toggle("show-close");
+});
 
-closeIcon.addEventListener("click", function(){
-  navbarLinks.classList.toggle("show-navbar")
-  closeIcon.classList.remove("show-close")
-})
+closeIcon.addEventListener("click", function () {
+  navbarLinks.classList.toggle("show-navbar");
+  closeIcon.classList.remove("show-close");
+});
 
 const heroSlider = document.querySelector(".hero-slider");
 const promoSlider = document.querySelector(".promo-slider");
@@ -31,7 +30,6 @@ circles.forEach((dot, index) => {
       heroSlider.style.display = "flex";
     } else if (index === 1) {
       promoSlider.style.display = "flex";
-      
     }
   });
 });
@@ -49,63 +47,57 @@ arrowLeft.addEventListener("click", function () {
   slider.scrollLeft -= 300;
 });
 
-const rightArrowIcon = document.querySelector(".right-arrow-icon")
-const leftArrowIcon = document.querySelector(".left-arrow-icon")
-const categoryBox = document.querySelectorAll(".category-box")
+const rightArrowIcon = document.querySelector(".right-arrow-icon");
+const leftArrowIcon = document.querySelector(".left-arrow-icon");
+const categoryBox = document.querySelectorAll(".category-box");
 
-let indexValue = 0
+let indexValue = 0;
 
-rightArrowIcon.addEventListener("click", function(){
-    if(indexValue < categoryBox.length -1){
-        categoryBox.forEach(box => {
-            box.classList.remove("active-category")
-        });
-        indexValue++
-        categoryBox[indexValue].classList.add("active-category")
-        
-    }
-})
-
-leftArrowIcon.addEventListener("click", function(){
-    if(indexValue > 0){
-        categoryBox.forEach(box => {
-            box.classList.remove("active-category")
-           
-        });
-        indexValue--
-        categoryBox[indexValue].classList.add("active-category")
-        
-    }
-})
-
-const rightProducts = document.querySelector(".right-arrow-Products")
-const leftProducts = document.querySelector(".left-arrow-Products")
-const productCard = document.querySelectorAll(".product-card")
-
-let currentIndex = 0
-
-rightProducts.addEventListener("click", function(){
-  if(currentIndex < productCard.length -1){
-    productCard.forEach(card => {
-      card.classList.remove("hover")
-    }); 
-    currentIndex ++
-    productCard[currentIndex].classList.add("hover")
+rightArrowIcon.addEventListener("click", function () {
+  if (indexValue < categoryBox.length - 1) {
+    categoryBox.forEach((box) => {
+      box.classList.remove("active-category");
+    });
+    indexValue++;
+    categoryBox[indexValue].classList.add("active-category");
   }
-})
+});
 
-leftProducts.addEventListener("click", function(){
-  if(currentIndex > 0){
-    productCard.forEach(card => {
-      card.classList.remove("hover")
-    }); 
-    currentIndex --
-    productCard[currentIndex].classList.add("hover")
+leftArrowIcon.addEventListener("click", function () {
+  if (indexValue > 0) {
+    categoryBox.forEach((box) => {
+      box.classList.remove("active-category");
+    });
+    indexValue--;
+    categoryBox[indexValue].classList.add("active-category");
   }
-})
+});
 
+const rightProducts = document.querySelector(".right-arrow-Products");
+const leftProducts = document.querySelector(".left-arrow-Products");
+const productCard = document.querySelectorAll(".product-card");
 
+let currentIndex = 0;
 
+rightProducts.addEventListener("click", function () {
+  if (currentIndex < productCard.length - 1) {
+    productCard.forEach((card) => {
+      card.classList.remove("hover");
+    });
+    currentIndex++;
+    productCard[currentIndex].classList.add("hover");
+  }
+});
+
+leftProducts.addEventListener("click", function () {
+  if (currentIndex > 0) {
+    productCard.forEach((card) => {
+      card.classList.remove("hover");
+    });
+    currentIndex--;
+    productCard[currentIndex].classList.add("hover");
+  }
+});
 
 
 

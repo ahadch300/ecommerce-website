@@ -25,17 +25,15 @@ if (logInForm) {
     let storedUser;
 
     try {
-        storedUser = JSON.parse(userString);
+      storedUser = JSON.parse(userString);
 
-        if(!storedUser){
-            throw new Error();
-        }
+      if (!storedUser) {
+        throw new Error();
+      }
     } catch (error) {
       alert("No account found");
-      return
+      return;
     }
-
-   
 
     if (
       storedUser.email === emailInput.value &&
@@ -45,11 +43,8 @@ if (logInForm) {
     } else {
       alert("Invalid email or password");
     }
-    
+
     logInForm.reset();
- 
   });
-
-
 }
 

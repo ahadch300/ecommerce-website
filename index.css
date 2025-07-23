@@ -10,10 +10,11 @@ body {
 .top-header {
   background-color: black;
   color: white;
-  padding: 5px 20px;
+  padding: 10px 10px;
   font-size: 13px;
   display: flex;
   align-items: center;
+  
 }
 
 .center-text {
@@ -190,7 +191,7 @@ body {
 .vertical-line {
   width: 1px;
   background-color: #e0e0e0;
-  height: 55vh;
+  height: 58vh;
 }
 
 .menu-item {
@@ -226,6 +227,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  padding-bottom: 10px;
 }
 .left-content {
   flex: 1;
@@ -237,6 +239,7 @@ body {
   color: white;
   font-size: 48px;
   font-weight: 600;
+  padding-bottom: 10px;
 }
 .hero-slider-btn {
   background: transparent;
@@ -285,12 +288,14 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
+ 
 }
 
 .icon-text-2 {
   display: flex;
   align-items: center;
   gap: 10px;
+  padding-bottom: 10px;
 }
 .left-content-2 {
   flex: 1;
@@ -302,6 +307,7 @@ body {
   color: white;
   font-size: 48px;
   font-weight: 600;
+  padding-bottom: 15px;
 }
 .promo-slider-btn {
   background: transparent;
@@ -367,7 +373,7 @@ body {
 }
 
 .flash-sale-section {
-  margin-top: 160px;
+  margin-top: 50px;
   padding: 0; /* Ensure no side padding */
   max-width: 100%;
   width: 100%;
